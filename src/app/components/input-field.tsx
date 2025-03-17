@@ -17,10 +17,11 @@ export default function InputField({ label, id, ...rest }: InputFieldProps) {
         </label>
       )}
       <Field
+        as="input"
         {...rest}
         id={id}
         className="p-3 h-11 text-sm rounded border border-gray-300 shadow"
       />
     </div>
-  )
+  );
 }

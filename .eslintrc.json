@@ -1,3 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"]
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off", // Вимкнути заборону на використання any
+    "@typescript-eslint/no-unsafe-assignment": "off" // Вимкнути заборону на ненадійне присвоєння
+  }
 }

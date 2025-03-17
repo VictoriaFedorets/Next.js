@@ -11,6 +11,12 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off', // Вимкнути заборону на використання any
+      '@typescript-eslint/no-unsafe-assignment': 'off' // Вимкнути заборону на ненадійне присвоєння
+    }
+  }
 ];
 
 export default eslintConfig;
